@@ -1,0 +1,1439 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Harry's Portfolio{% endblock %}
+{% block meta_description %}take a look at my beautiful portfolio{% endblock %}
+
+
+{% block content %} 
+
+    <!-- Body main wrapper start -->
+    <main>
+
+        <!-- breadcrumb area  start -->
+        <section class="breadcrumb__area p-relative style-one is-breadcrumb-space">
+            <div class="breadcrumb__thumb-bg include-bg bg__thumb-position"
+                data-background="{% static 'img/breadcrumb-bg-03.jpg' %}"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xxl-7 col-xl-7 col-lg-8">
+                        <div class="breadcrumb__content-wrapper p-relative z-index-1 text-center">
+                            <div class="breadcrumb__title-wrapperr">
+                                <h1 class="breadcrumb__title mb-25">My Beautiful Portfolio</h1>
+                            </div>
+                            <div class="breadcrumb__menu">
+                                <nav>
+                                    <ul>
+                                        <li><span><a href="{% url 'home' %}">Home</a></span></li>
+                                        <li><span>Portfolio</span></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- breadcrumb area  end -->
+
+        <!-- portfolio area start -->
+        <section class="bd__portfolio-area section-space">
+            <div class="container">
+                <div class="row g-5 section__title-space justify-content-center">
+                    <div class="col-xl-8 col-lg-8">
+                        <div class="bd__menu-tab">
+                            <ul class="bd__menu nav" id="myTab" role="tablist">
+                                <li class="bd__btn-item" role="presentation">
+                                    <button class="active" id="view-tab" data-bs-toggle="tab" data-bs-target="#view"
+                                        type="button" role="tab" aria-controls="view" aria-selected="true">View All</button>
+                                </li>
+                                <li class="bd__btn-item" role="presentation">
+                                    <button id="project-tab" data-bs-toggle="tab" data-bs-target="#project"
+                                        type="button" role="tab" aria-controls="project"
+                                        aria-selected="false">Wordpress</button>
+                                </li>
+                                <li class="bd__btn-item" role="presentation">
+                                    <button id="digital-tab" data-bs-toggle="tab" data-bs-target="#digital"
+                                        type="button" role="tab" aria-controls="digital" aria-selected="false">Figma</button>
+                                </li>
+                                <li class="bd__btn-item" role="presentation">
+                                    <button id="creative-tab" data-bs-toggle="tab" data-bs-target="#creative"
+                                        type="button" role="tab" aria-controls="creative"
+                                        aria-selected="false">Flutter</button>
+                                </li>
+                                <li class="bd__btn-item" role="presentation">
+                                    <button id="mockup-tab" data-bs-toggle="tab" data-bs-target="#mockup" type="button"
+                                        role="tab" aria-controls="mockup" aria-selected="false">Python</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-12">
+                        <div class="tab-content wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s"
+                            id="myTabContent">
+                            <div class="tab-pane fade show active" id="view" role="tabpanel" aria-labelledby="view-tab">
+                                <div class="row  g-5">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-01.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-01.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://limandy.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://limandy.com/" target="_blank">Blog | Limandy Entertainment</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-12.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-12.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://limandy.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://limandy.com/" target="_blank">Movie Reviews | Limandy Entertainment</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-08.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-08.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://limandy.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://limandy.com/" target="_blank">Home | Limandy Entertainment</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-27.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-27.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://fitnesstagg.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://fitnesstagg.com/" target="_blank">Home | Fitness Tagg</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-28.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-28.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://fitnesstagg.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://fitnesstagg.com/" target="_blank">About | Fitness Tagg</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-29.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-29.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://fitnesstagg.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://fitnesstagg.com/" target="_blank">Blog | Fitness Tagg</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-33.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-33.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://quickspecialoffers.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://quickspecialoffers.com/" target="_blank">Home | Quick Special Offers</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-32.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-32.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://quickspecialoffers.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://quickspecialoffers.com/" target="_blank">Product Reviews | Quick Special Offers</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-35.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-35.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://quickspecialoffers.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://quickspecialoffers.com/" target="_blank">Contact | Quick Special Offers</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-38.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-38.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://h7medicare.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://h7medicare.com/" target="_blank">About | H7Medicare</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-40.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-40.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://h7medicare.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://h7medicare.com/" target="_blank">Events | H7Medicare</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-43.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-43.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://h7medicare.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://h7medicare.com/" target="_blank">Contact | H7Medicare</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-02.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-02.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://limandy.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://limandy.com/" target="_blank">Limandy Entertainment</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-57.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-57.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://charityecho.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://charityecho.com/" target="_blank">Charity Echo</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-25.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-25.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://fitnesstagg.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://fitnesstagg.com/" target="_blank">Fitness Tagg</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-36.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-36.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://quickspecialoffers.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://quickspecialoffers.com/" target="_blank">Quick Special Offers</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-41.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-41.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://h7medicare.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://h7medicare.com/" target="_blank">H7Medicare</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-49.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-49.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://charityecho.com/" target="_blank">Python & Django</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://charityecho.com/" target="_blank">Home | Charity Echo</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-53.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-53.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://charityecho.com/" target="_blank">Python & Django</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://charityecho.com/" target="_blank">Home | Charity Echo</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-55.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-55.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://charityecho.com/" target="_blank">Python & Django</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://charityecho.com/" target="_blank">About | Charity Echo</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-57.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-57.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://charityecho.com/" target="_blank">Python & Django</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://charityecho.com/" target="_blank">Events | Charity Echo</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-58.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-58.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://charityecho.com/" target="_blank">Python & Django</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://charityecho.com/" target="_blank">Blog | Charity Echo</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-59.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-59.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://charityecho.com/" target="_blank">Python & Django</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://charityecho.com/" target="_blank">Contact | Charity Echo</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-62.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-62.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://harrysportfolio.click/" target="_blank">Python & Django</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://harrysportfolio.click/" target="_blank">Home | Harrys Portfolio</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-63.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-63.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://harrysportfolio.click/" target="_blank">Python & Django</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://harrysportfolio.click/" target="_blank">About | Harrys Portfolio</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-64.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-64.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://harrysportfolio.click/" target="_blank">Python & Django</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://harrysportfolio.click/" target="_blank">Portfolio | Harrys Portfolio</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-65.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-65.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://harrysportfolio.click/" target="_blank">Python & Django</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://harrysportfolio.click/" target="_blank">Contact | Harrys Portfolio</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="project" role="tabpanel" aria-labelledby="project-tab">
+                                <div class="row  g-5">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-01.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-01.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://limandy.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://limandy.com/" target="_blank">Blog | Limandy Entertainment</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-12.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-12.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://limandy.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://limandy.com/" target="_blank">Movie Reviews | Limandy Entertainment</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-08.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-08.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://limandy.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://limandy.com/" target="_blank">Home | Limandy Entertainment</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-27.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-27.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://fitnesstagg.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://fitnesstagg.com/" target="_blank">Home | Fitness Tagg</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-28.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-28.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://fitnesstagg.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://fitnesstagg.com/" target="_blank">About | Fitness Tagg</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-29.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-29.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://fitnesstagg.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://fitnesstagg.com/" target="_blank">Blog | Fitness Tagg</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-33.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-33.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://quickspecialoffers.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://quickspecialoffers.com/" target="_blank">Home | Quick Special Offers</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-32.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-32.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://quickspecialoffers.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://quickspecialoffers.com/" target="_blank">Product Reviews | Quick Special Offers</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-35.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-35.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://quickspecialoffers.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://quickspecialoffers.com/" target="_blank">Contact | Quick Special Offers</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-38.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-38.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://h7medicare.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://h7medicare.com/" target="_blank">About | H7Medicare</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-40.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-40.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://h7medicare.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://h7medicare.com/" target="_blank">Events | H7Medicare</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-43.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-43.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://h7medicare.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://h7medicare.com/" target="_blank">Contact | H7Medicare</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="digital" role="tabpanel" aria-labelledby="digital-tab">
+                                <div class="row  g-5">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-02.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-02.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://limandy.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://limandy.com/" target="_blank">Limandy Entertainment</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-57.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-57.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://charityecho.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://charityecho.com/" target="_blank">Charity Echo</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-25.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-25.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://fitnesstagg.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://fitnesstagg.com/" target="_blank">Fitness Tagg</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-36.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-36.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://quickspecialoffers.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://quickspecialoffers.com/" target="_blank">Quick Special Offers</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven ">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-41.jpg' %}" alt="">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-41.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://h7medicare.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://h7medicare.com/" target="_blank">H7Medicare</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="creative" role="tabpanel" aria-labelledby="creative-tab">
+                                <div class="row  g-5">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-12.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-12.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://limandy.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://limandy.com/" target="_blank">Movie Reviews | Limandy Entertainment</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-12.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-12.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://limandy.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://limandy.com/" target="_blank">Movie Reviews | Limandy Entertainment</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-12.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-12.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://limandy.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://limandy.com/" target="_blank">Movie Reviews | Limandy Entertainment</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-12.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-12.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://charityecho.com/" target="_blank">Design</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://charityecho.com/" target="_blank">Home | Charity Echo</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="mockup" role="tabpanel" aria-labelledby="mockup-tab">
+                                <div class="row  g-5">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-49.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-49.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://charityecho.com/" target="_blank">Python & Django</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://charityecho.com/" target="_blank">Home | Charity Echo</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-53.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-53.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://charityecho.com/" target="_blank">Python & Django</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://charityecho.com/" target="_blank">Home | Charity Echo</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-55.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-55.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://charityecho.com/" target="_blank">Python & Django</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://charityecho.com/" target="_blank">About | Charity Echo</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-57.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-57.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://charityecho.com/" target="_blank">Python & Django</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://charityecho.com/" target="_blank">Events | Charity Echo</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-58.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-58.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://charityecho.com/" target="_blank">Python & Django</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://charityecho.com/" target="_blank">Blog | Charity Echo</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-59.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-59.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://charityecho.com/" target="_blank">Python & Django</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://charityecho.com/" target="_blank">Contact | Charity Echo</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-62.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-62.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://harrysportfolio.click/" target="_blank">Python & Django</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://harrysportfolio.click/" target="_blank">Home | Harrys Portfolio</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-63.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-63.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://harrysportfolio.click/" target="_blank">Python & Django</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://harrysportfolio.click/" target="_blank">About | Harrys Portfolio</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-64.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-64.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://harrysportfolio.click/" target="_blank">Python & Django</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://harrysportfolio.click/" target="_blank">Portfolio | Harrys Portfolio</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class=" portfolio__item style-seven">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{% static 'img/portfolio-65.jpg' %}" alt="image not found">
+                                                <div class="portfolio__item-btn">
+                                                    <span class="icon__box">
+                                                        <a class="popup-image circle-btn is-bg-white is-btn-large"
+                                                            href="{% static 'img/portfolio-65.jpg' %}"> <i
+                                                                class="icon-plus"></i></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="portfolio__item-content">
+                                                <div class="portfolio__item-info">
+                                                    <div class="portfolio__tag">
+                                                        <a href="https://harrysportfolio.click/" target="_blank">Python & Django</a>
+                                                    </div>
+                                                    <h5 class="portfolio__item-title underline"><a
+                                                            href="https://harrysportfolio.click/" target="_blank">Contact | Harrys Portfolio</a></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- portfolio area end -->
+
+    </main>
+    <!-- Body main wrapper end -->
+
+{% endblock %}

@@ -1,0 +1,220 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Contact Harry{% endblock %}
+{% block meta_description %}lets talk today about how you can grow your business{% endblock %}
+
+
+{% block content %}
+
+    <!-- Body main wrapper start -->
+    <main>
+
+        <!-- breadcrumb area  start -->
+        <section class="breadcrumb__area p-relative style-two is-breadcrumb-space">
+            <div class="breadcrumb__thumb-bg include-bg bg__thumb-position"
+                data-background="{% static 'img/breadcrumb-bg-04.jpg' %}"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xxl-7 col-xl-7 col-lg-8">
+                        <div class="breadcrumb__content-wrapper p-relative z-index-1 text-center">
+                            <div class="breadcrumb__title-wrapperr">
+                                <h1 class="breadcrumb__title mb-25">Connect With Me Today</h1>
+                            </div>
+                            <div class="breadcrumb__menu">
+                                <nav>
+                                    <ul>
+                                        <li><span><a href="{% url 'home' %}">Home</a></span></li>
+                                        <li><span>Contact</span></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- breadcrumb area  end -->
+
+        <!-- contact area start -->
+        <div class="contact__area section-space">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="contact__item-wrapper wow fadeIn" data-wow-delay=".3s">
+                            <div class="contact__item-icon">
+                                <span>
+                                    <i class="icon-location"></i>
+                                </span>
+                            </div>
+                            <div class="contact__item-content">
+                                <span class="contact-item-subtitle">Location</span>
+                                <h5><a target="_blank" href="https://www.google.com/maps">18 New Heaven Avenue</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="contact__item-wrapper wow fadeIn" data-wow-delay=".5s">
+                            <div class="contact__item-icon">
+                                <span>
+                                    <i class="icon-envelope"></i>
+                                </span>
+                            </div>
+                            <div class="contact__item-content">
+                                <span class="contact-item-subtitle">Email Address</span>
+                                <h5><a href="#"><span class="__cf_email__">captainharri@gmail.com</span></a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="contact__item-wrapper wow fadeIn" data-wow-delay=".7s">
+                            <div class="contact__item-icon">
+                                <span> 
+                                    <i class="icon-phone"></i>
+                                </span>
+                            </div>
+                            <div class="contact__item-content">
+                                <span class="contact-item-subtitle">Contact Number</span>
+                                <h5><a href="#">+2348029510173</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact area end -->
+
+        {% if alert_title %}
+        <!-- Alert container -->
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <!-- Alert title and message from the context -->
+            <h2 class="text-dark textee text-center">Thanks {{ name }}</h2>
+            <p class="text-center">{{ alert_message }}</p>
+        <!-- Close button --> 
+        </div>
+        {% endif %} 
+
+
+        <!-- Contact area start -->
+        <div id="homecontact" class="bd-contact__area section-space p-relative">
+            <div class="contact__bg include-bg" data-background="{% static 'img/contact-bg-01.png' %}"></div>
+            <div class="container">
+                <div class="row g-5">
+                    <!-- "GET IN TOUCH" Section -->
+                    <div class="col-lg-5 wow fadeInLeft" data-wow-delay=".3s">
+                        <div class="contact__wrapper">
+                            <div class="section__title-wrapper mb-30">
+                                
+                                <h2 class="section__title mb-20">Feel Free To Contact me</h2>
+                                <p class="section__paragraph">Have questions or ready to kickstart your project? Don't hesitate to reach out! I'm here to help you bring your ideas to life. Drop me a line using the form below or reach out directly via email or phone. I look forward to hearing from you!</p>
+                            </div>
+                            <div class="contact__info-item style-two">
+                                <ul>
+                                    <li>
+                                        <div class="contact__info">
+                                            <div class="contact__info-icon">
+                                                <span>
+                                                    <i class="fa-brands fa-telegram"></i>
+                                                </span>
+                                            </div>
+                                            <div class="contact__info-content">
+                                                <p>Telegram</p>
+                                                <h6><a href="#">@captainsexy</a></h6>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contact__info">
+                                            <div class="contact__info-icon">
+                                                <span>
+                                                    <i class="fa-brands fa-skype"></i>
+                                                </span>
+                                            </div>
+                                            <div class="contact__info-content">
+                                                <p>Skype</p>
+                                                <h6><a href="#">@captainsexy</a></h6>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contact__info">
+                                            <div class="contact__info-icon">
+                                                <span>
+                                                    <i class="fa-brands fa-skype"></i>
+                                                </span>
+                                            </div>
+                                            <div class="contact__info-content">
+                                                <p>Behance</p>
+                                                <h6><a href="#">@captainsexy</a></h6>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="col-lg-7 wow fadeInRight" data-wow-delay=".3s">
+                        <form action="{% url 'contact' %}" method="post" name="sentMessage" class="was-validated">
+                            {% csrf_token %}
+                            <div class="row g-4 align-items-center justify-content-center">
+                                <div class="col-lg-6 text-center">
+                                    <div class="from__input-box">
+                                        <div class="contentHidden">
+                                            <label for="text">Your Name<span>*</span></label>
+                                        </div>
+                                        <div class="form__input style-two">
+                                            <input name="name" type="text" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name">
+                                            <div class="contentHidden"><span><i class="fa-solid fa-house"></i></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 text-center">
+                                    <div class="from__input-box">
+                                        <div class="contentHidden">
+                                            <label for="text">Email<span>*</span></label>
+                                        </div>
+                                        <div class="form__input style-two">
+                                            <input name="email" type="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email">
+                                            <div class="contentHidden"><span><i class="fa-solid fa-envelope"></i></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <div class="from__input-box">
+                                        <div class="contentHidden">
+                                            <label for="text">Subject<span>*</span></label>
+                                        </div>
+                                        <div class="form__input style-two">
+                                            <input name="subject" type="text" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject">
+                                            <div class="contentHidden"><span><i class="fa-solid fa-house"></i></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 text-center">
+                                    <div class="from__input-box">
+                                        <div class="contentHidden">
+                                            <label for="text">Message<span>*</span></label>
+                                        </div>
+                                        <div class="form__input style-two">
+                                            <textarea name="message" placeholder="Your Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                            <div class="contentHidden"><span><i class="fa-solid fa-envelope"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact__btn">
+                                    <button type="submit" class="bd-btn w-100">Submit now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <!-- Body main wrapper end -->
+
+{% endblock %}

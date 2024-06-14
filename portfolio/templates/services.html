@@ -1,0 +1,553 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Contact Harry{% endblock %}
+{% block meta_description %}lets talk today about how you can grow your business{% endblock %}
+
+
+{% block content %}
+
+
+    <!-- Body main wrapper start -->
+    <main>
+
+        <!-- breadcrumb area  start -->
+        <section class="breadcrumb__area p-relative style-two is-breadcrumb-space">
+            <div class="breadcrumb__thumb-bg include-bg bg__thumb-position"
+                data-background="{% static 'img/breadcrumb-bg-02.jpg' %}"></div>
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xxl-7 col-xl-7 col-lg-8">
+                        <div class="breadcrumb__content-wrapper p-relative z-index-1 text-center">
+                            <div class="breadcrumb__title-wrapperr">
+                                <h1 class="breadcrumb__title mb-25">Services</h1>
+                            </div>
+                            <div class="breadcrumb__menu">
+                                <nav>
+                                    <ul>
+                                        <li><span><a href="{% url 'home' %}">Home</a></span></li>
+                                        <li><span>Services</span></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- breadcrumb area  end -->
+
+        <!-- Service area start -->
+        <section class="bd__service-area section-space">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="service__widget">
+                            <div class="service__widget-item mb-30">
+                                <div class="service__widget-tab underline-full">
+                                    <h5>Categories </h5>
+                                    <ul>
+                                        <li>
+                                            <a href="#mobile" class="active">
+                                                <span>
+                                                    <i class="icon-phone"></i>
+                                                </span>
+                                                Mobile Apps Development
+                                                <i class="icon-arrow-small"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#fullstack">
+                                                <span>
+                                                    <i class="icon-project"></i>
+                                                </span>
+                                                Full Stack Development
+                                                <i class="icon-arrow-small"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#product">
+                                                <span>
+                                                    <i class="icon-ux-design"></i>
+                                                </span>
+                                                Product Design
+                                                <i class="icon-arrow-small"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#webdesign">
+                                                <span>
+                                                    <i class="icon-design"></i>
+                                                </span>
+                                                Wordpress Design
+                                                <i class="icon-arrow-small"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#email">
+                                                <span>
+                                                    <i class="icon-envelope"></i>
+                                                </span>
+                                                Email Server Administrator
+                                                <i class="icon-arrow-small"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="service__widget-item mb-30">
+                                <div class="service__contact-info-item underline-full">
+                                    <h5>Contact Info</h5>
+                                    <div class="contact__info-item">
+                                        <ul>
+                                            <li>
+                                                <div class="contact__info">
+                                                    <div class="contact__info-icon">
+                                                        <span>
+                                                            <i class="icon-location"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="contact__info-content">
+                                                        <h6><a target="_blank" href="#">18 New Heaven Avenue</a></h6>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="contact__info">
+                                                    <div class="contact__info-icon">
+                                                        <span>
+                                                            <i class="icon-phone"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="contact__info-content">
+                                                        <h6><a href="#">+2348029510173</a></h6>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="contact__info">
+                                                    <div class="contact__info-icon">
+                                                        <span>
+                                                            <i class="icon-envelope"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="contact__info-content">
+                                                        <h6><a href="#"><span class="__cf_email__">captainharri@gmail.com</span></a></h6>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-7 order-first order-lg-last">
+                        <div class="service__details-wrapper">
+                            <h2 class="service__details-title mb-25">Empowering Your Digital Presence <br> Our Comprehensive Solutions.
+                            </h2>
+                            <p>Unlock your digital potential with our versatile range of services. From sleek mobile app development and dynamic WordPress web design to robust full-stack development using Python and Django, we bring your ideas to life. Elevate user experience with meticulous product design crafted on Figma, while ensuring seamless communication through expert email server administration. Let's build your digital footprint together.</p>
+                            <div class="service__details-thumb">
+                                <img src="{% static 'img/services-details-01.jpg' %}" alt="image not found">
+                            </div>
+                            <div class="service__details-text" id="mobile">
+                                <h5 class=" mb-15" style="color: #2983dd;">Mobile App Development</h5>
+                                <p>Transform your vision into a stunning mobile reality with our Flutter and Dart expertise. Our comprehensive approach ensures every step of the development process is meticulously executed, delivering exceptional results tailored to your needs. </p>
+
+                                <p>Our Process:</p>
+
+                                <p>Consultation and Conceptualization:
+                                We begin by understanding your goals, target audience, and unique requirements through detailed consultations. Our team collaborates closely with you to conceptualize the app, ensuring alignment with your vision and objectives. </p>
+
+                                <p>UI/UX Design:
+                                Crafting an engaging and intuitive user experience is paramount. Leveraging Flutter's rich set of UI components, we design visually appealing interfaces that captivate users and enhance usability. Every element is meticulously crafted to reflect your brand identity and resonate with your audience. </p>
+
+                                <p>Development and Prototyping:
+                                Our seasoned developers utilize the power of Dart and Flutter to bring your app to life. With a focus on efficiency and scalability, we code clean, maintainable solutions that adhere to industry best practices. Through iterative prototyping, we refine the app's functionality and performance, ensuring it meets your expectations at every stage. </p>
+
+                                <p>Testing and Quality Assurance:
+                                Quality is non-negotiable. Our rigorous testing processes encompass functional, performance, and usability testing to identify and address any potential issues. We strive for perfection, conducting thorough QA checks to deliver a seamless and bug-free experience to your users. </p>
+
+                                <p>Deployment and Support:
+                                Upon completion, we deploy your app to the desired platforms, be it iOS, Android, or both. Our support doesn't end there - we provide ongoing maintenance and updates to keep your app running smoothly and up-to-date with evolving technologies and user expectations. </p>
+
+                                <p>Optimization and Growth:
+                                We believe in continuous improvement. Through analytics-driven insights and user feedback, we optimize your app for maximum performance and engagement. Whether it's implementing new features, refining existing ones, or scaling for growth, we're committed to driving your app's success in the competitive digital landscape. </p>
+
+                                <p>Embark on your mobile app journey with confidence. Partner with us for unparalleled Flutter and Dart mobile app development services that propel your business forward. </p>
+                            </div>
+                            <div style="margin-top: 60px;"></div>
+                            <div class="service__details-text" id="fullstack">
+                                <h5 class=" mb-15" style="color: #2983dd;">Full Stack Development</h5>
+                                <p>Experience the power of Python and Django with our comprehensive full-stack development services. We specialize in creating robust, scalable web applications that streamline your business processes and elevate your online presence. </p>
+
+                                <p>Our Process:</p>
+
+                                <p>Requirement Gathering:
+                                We kickstart the development process by understanding your business objectives, target audience, and functional requirements. Through detailed discussions, we collaborate to define the project scope and establish clear objectives. </p>
+                                
+                                <p>Architecture and Planning:
+                                Leveraging our expertise in Python and Django, we architect a scalable and efficient solution tailored to your specific needs. We devise a strategic plan outlining the project milestones, timeline, and resource allocation to ensure a smooth development process. </p>
+
+                                <p>Backend Development:
+                                Our experienced developers utilize the power of Django to build a solid backend infrastructure that supports your application's functionality. From database design and API development to business logic implementation, we ensure that your application operates seamlessly and securely. </p>
+
+                                <p>Frontend Development:
+                                With Python powering the backend, we leverage modern frontend technologies such as HTML, CSS, and JavaScript frameworks like React or Vue.js to create an intuitive and visually appealing user interface. Our focus is on delivering a responsive and engaging frontend experience that enhances user satisfaction. </p>
+
+                                <p>Integration and Testing:
+                                We integrate various components of your application, ensuring seamless communication between the frontend and backend. Through rigorous testing, including unit tests, integration tests, and user acceptance testing, we verify the functionality, performance, and reliability of your application. </p>
+
+                                <p>Deployment and Maintenance:
+                                We manage the deployment process efficiently, deploying your application to a production environment and ensuring a smooth launch. Post-launch, our dedicated support team provides ongoing maintenance and support, monitoring the application's performance and promptly addressing any issues or updates. </p>
+
+                                <p>Partner with us to leverage the power of Python and Django for your full-stack development needs. Together, let's build scalable, high-performance web applications that propel your business forward in the digital landscape. </p>
+                            </div>
+                            <div style="margin-top: 60px;"></div>
+                            <div class="service__details-text" id="product">
+                                <h5 class=" mb-15" style="color: #2983dd;">Product Design</h5>
+                                <p>Elevate your digital presence with our comprehensive UI/UX design services, powered by Figma. We specialize in creating captivating and intuitive user interfaces that enhance user satisfaction and drive engagement </p>
+
+                                <p>Our Process:</p>
+
+                                <p>Discovery and Research:
+                                We start by understanding your target audience, business goals, and brand identity. Through extensive research and analysis, we uncover valuable insights that inform our design decisions and ensure alignment with your objectives. </p>
+                                
+                                <p>Wireframing and Prototyping:
+                                Using Figma's versatile tools, we craft wireframes and prototypes that visualize the structure and flow of your application or website. These prototypes allow for iterative feedback and refinement, ensuring that the final design meets your expectations and user needs. </p>
+
+                                <p>Visual Design:
+                                Our experienced designers bring your brand to life through stunning visual designs. Leveraging Figma's collaborative features, we create cohesive design systems that encompass color schemes, typography, and UI elements, ensuring consistency across all touchpoints. </p>
+
+                                <p>Interaction Design:
+                                We focus on creating seamless and intuitive user interactions that enhance usability and delight users. Through animations, micro-interactions, and user flows, we craft engaging experiences that guide users through your digital ecosystem effortlessly. </p>
+
+                                <p>User Testing and Feedback:
+                                Rigorous user testing is integral to our process. We conduct usability tests and gather feedback from real users to identify pain points and areas for improvement. This iterative approach ensures that the final design meets user expectations and maximizes usability. </p>
+
+                                <p>Handoff and Collaboration:
+                                With Figma's collaborative features, we facilitate seamless collaboration between designers, developers, and stakeholders. We provide detailed design specifications and assets, streamlining the handoff process and ensuring smooth implementation of the final design. </p>
+
+                                <p>Support and Iteration:
+                                Our commitment to excellence extends beyond the initial design phase. We provide ongoing support and iteration, monitoring user feedback and performance metrics to make data-driven refinements and enhancements over time. </p>
+
+                                <p>Partner with us to unlock the full potential of your digital experience. Together, let's create visually stunning and user-centric designs that leave a lasting impression on your audience. </p>
+                            </div>
+                            <div style="margin-top: 60px;"></div>
+                            <div class="service__details-text" id="webdesign">
+                                <h5 class=" mb-15" style="color: #2983dd;">Wordpress Web Design</h5>
+                                <p>Transform your online presence with our comprehensive WordPress web design services. Backed by years of experience and a keen eye for detail, we specialize in creating stunning and user-friendly websites that resonate with your audience and drive results. </p>
+
+                                <p>Our Process:</p>
+
+                                <p>Discovery and Strategy:
+                                We begin by understanding your business objectives, target audience, and brand identity. Through in-depth discussions and research, we craft a strategic plan that aligns with your goals and sets the foundation for the design process. </p>
+                                
+                                <p>Custom Design:
+                                Our talented designers translate your vision into captivating visual concepts tailored to your brand. Leveraging the flexibility of WordPress, we create custom designs that reflect your unique identity and resonate with your target audience. </p>
+
+                                <p>Responsive Development:
+                                With WordPress as our platform of choice, we develop responsive websites that adapt seamlessly to various devices and screen sizes. Our developers utilize best practices to ensure optimal performance, accessibility, and compatibility across all browsers and devices. </p>
+
+                                <p>Content Integration:
+                                We seamlessly integrate your content into the WordPress framework, ensuring a cohesive and engaging user experience. Whether it's text, images, videos, or other multimedia elements, we optimize content placement to maximize impact and readability. </p>
+
+                                <p>Functional Enhancements:
+                                Beyond aesthetics, we enhance your website's functionality with custom features and plugins. From contact forms and e-commerce integrations to social media widgets and search engine optimization tools, we tailor your website to meet your specific needs and objectives. </p>
+
+                                <p>Testing and Quality Assurance:
+                                Rigorous testing is integral to our process. We conduct comprehensive QA testing to identify and rectify any bugs or issues, ensuring that your website operates smoothly and delivers a seamless user experience across all platforms. </p>
+
+                                <p>Launch and Support:
+                                We manage the deployment process efficiently, ensuring a smooth transition from development to live environment. Post-launch, we provide ongoing support and maintenance, monitoring website performance and addressing any updates or enhancements to keep your website running at its best. </p>
+
+                                <p>Partner with us to elevate your online presence with a stunning WordPress website that captures your brand essence and engages your audience effectively. Let's embark on a journey of digital success together. </p>
+                            </div>
+                            <div style="margin-top: 60px;"></div>
+                            <div class="service__details-text" id="email">
+                                <h5 class=" mb-15" style="color: #2983dd;">Email Server Administrator</h5>
+                                <p>Empower your business with our expert Email Server Administrator services, ensuring seamless communication and reliable email delivery. With our comprehensive approach, we guarantee the optimal performance and security of your email infrastructure. </p>
+
+                                <p>Our Process:</p>
+
+                                <p>Assessment and Planning:
+                                We start by conducting a thorough assessment of your current email server setup, identifying any weaknesses or areas for improvement. Based on our findings, we devise a customized plan to optimize your email infrastructure and address any vulnerabilities. </p>
+                                
+                                <p>Installation and Configuration:
+                                Leveraging our expertise in email server technologies, we install and configure robust email server software tailored to your specific requirements. Whether you prefer on-premises solutions like Microsoft Exchange or cloud-based platforms like Google Workspace, we ensure seamless integration and optimal performance. </p>
+
+                                <p>Security Implementation:
+                                Protecting your email communications is our top priority. We implement industry-leading security measures, including encryption protocols, spam filters, and firewall configurations, to safeguard your sensitive data and prevent unauthorized access or malicious attacks. </p>
+
+                                <p>Performance Optimization:
+                                We fine-tune your email server settings and configurations to optimize performance and reliability. Through load balancing, caching mechanisms, and server resource allocation, we ensure fast and efficient email delivery while minimizing downtime and latency. </p>
+
+                                <p>Monitoring and Maintenance:
+                                Our proactive monitoring solutions continuously track the health and performance of your email server infrastructure. We monitor server uptime, network traffic, and email delivery metrics, promptly addressing any issues or anomalies to ensure uninterrupted service. </p>
+
+                                <p>Backup and Disaster Recovery:
+                                We implement robust backup and disaster recovery solutions to protect your email data against unforeseen events. Regular backups and automated failover mechanisms ensure that your email communications remain accessible and secure, even in the event of hardware failures or data breaches. </p>
+
+                                <p>Continuous Improvement:
+                                Our commitment to excellence extends beyond implementation. We regularly review and optimize your email server infrastructure, incorporating industry best practices and emerging technologies to ensure ongoing performance, security, and scalability. </p>
+
+                                <p>Partner with us to streamline your email communications and enhance productivity with our Email Server Administrator services. Let us handle the technical complexities while you focus on growing your business with confidence. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service area end -->
+
+        <!-- testimonial area start -->
+        <section class="bd-testimonial__area section-space theme-bg-secondary p-relative">
+            <div class="testimonial__shape">
+                <img class="testimonial__shape-three" src="{% static 'img/four-line-shape-1.png' %}"
+                    alt="image not found">
+                <img class="testimonial__shape-four" src="{% static 'img/four-line-shape-2.png' %}"
+                    alt="image not found">
+            </div>
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-xl-5 col-lg-6 col-md-8">
+                        <div class="section__title-wrapper section__title-space">
+                            <span class="section__subtitle bg-field">TESTIMONIALS </span>
+                            <h2 class="section__title">Client Experiences and Testimonials</h2>
+                            <p class="contentHidden">contentHidden</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" row">
+                    <div class="testimonial__slider wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
+                        <div class="swiper testimonial__active-two">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial__wrapper style-five">
+                                        <div class="testimonial__top-item">
+                                            <div class="testimonial__thumb-wrap">
+                                                <div class="testimonial__avatar-info">
+                                                    <h5 class="testimonial__avatar-title">Henry</h5>
+                                                    <span class="testimonial__avatar-designation">Manager /
+                                                        <span class="testimonial__rating">
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial__shape">
+                                                <img class="testimonial__shape-quote"
+                                                    src="{% static 'img/testimonial-quote-small.png' %}"
+                                                    alt="image not found">
+                                            </div>
+                                        </div>
+                                        <div class="testimonial__item">
+                                            <div class="testimonial__content">
+                                                <div class="testimonial__text">
+                                                    <p>Working with Mr Harry was an absolute pleasure! Their expertise in mobile app development exceeded our expectations. Not only did they deliver a flawless application, but their professionalism and dedication throughout the project were truly commendable. I highly recommend Mr Harry for anyone looking for top-notch app development services. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial__wrapper style-five">
+                                        <div class="testimonial__top-item">
+                                            <div class="testimonial__thumb-wrap">
+                                                <div class="testimonial__avatar-info">
+                                                    <h5 class="testimonial__avatar-title">Peter</h5>
+                                                    <span class="testimonial__avatar-designation">Consultant /
+                                                        <span class="testimonial__rating">
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial__shape">
+                                                <img class="testimonial__shape-quote"
+                                                    src="{% static 'img/testimonial-quote-small.png' %}"
+                                                    alt="image not found">
+                                            </div>
+                                        </div>
+                                        <div class="testimonial__item">
+                                            <div class="testimonial__content">
+                                                <div class="testimonial__text">
+                                                    <p>I cannot thank Mr Harry enough for the outstanding WordPress website they created for our business. Their attention to detail, creativity, and responsiveness were exceptional. They truly captured our brand essence and delivered a website that exceeded our expectations. I look forward to collaborating with Mr Harry on future projects. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial__wrapper style-five">
+                                        <div class="testimonial__top-item">
+                                            <div class="testimonial__thumb-wrap">
+                                                <div class="testimonial__avatar-info">
+                                                    <h5 class="testimonial__avatar-title">Freddy</h5>
+                                                    <span class="testimonial__avatar-designation">Teacher /
+                                                        <span class="testimonial__rating">
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial__shape">
+                                                <img class="testimonial__shape-quote"
+                                                    src="{% static 'img/testimonial-quote-small.png' %}"
+                                                    alt="image not found">
+                                            </div>
+                                        </div>
+                                        <div class="testimonial__item">
+                                            <div class="testimonial__content">
+                                                <div class="testimonial__text">
+                                                    <p>Choosing Mr Harry for our Python and Django development needs was one of the best decisions we made. Their technical expertise, problem-solving skills, and commitment to delivering high-quality solutions were evident from day one. They went above and beyond to ensure our project's success, and we couldn't be happier with the results. Highly recommended! </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial__wrapper style-five">
+                                        <div class="testimonial__top-item">
+                                            <div class="testimonial__thumb-wrap">
+                                                <div class="testimonial__avatar-info">
+                                                    <h5 class="testimonial__avatar-title">David</h5>
+                                                    <span class="testimonial__avatar-designation">Coach /
+                                                        <span class="testimonial__rating">
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial__shape">
+                                                <img class="testimonial__shape-quote"
+                                                    src="{% static 'img/testimonial-quote-small.png' %}"
+                                                    alt="image not found">
+                                            </div>
+                                        </div>
+                                        <div class="testimonial__item">
+                                            <div class="testimonial__content">
+                                                <div class="testimonial__text">
+                                                    <p>I had the pleasure of working with Mr Harry on a UI/UX design project, and I was thoroughly impressed with their creativity and attention to detail. They took the time to understand our requirements and delivered a stunning design that perfectly encapsulated our brand identity. Their professionalism and communication throughout the project were exceptional. I look forward to collaborating with Mr Harry again in the future. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial__wrapper style-five">
+                                        <div class="testimonial__top-item">
+                                            <div class="testimonial__thumb-wrap">
+                                                <div class="testimonial__avatar-info">
+                                                    <h5 class="testimonial__avatar-title">Angela</h5>
+                                                    <span class="testimonial__avatar-designation">Blogger /
+                                                        <span class="testimonial__rating">
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i class="icon-star"></i>
+                                                            </a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial__shape">
+                                                <img class="testimonial__shape-quote"
+                                                    src="{% static 'img/testimonial-quote-small.png' %}"
+                                                    alt="image not found">
+                                            </div>
+                                        </div>
+                                        <div class="testimonial__item">
+                                            <div class="testimonial__content">
+                                                <div class="testimonial__text">
+                                                    <p>As someone who values reliable email communication, I was thrilled to find Mr Harry for email server administration services. They took our email infrastructure to the next level, ensuring seamless communication and robust security measures. Their proactive approach to monitoring and maintenance gave us peace of mind, knowing that our email systems were in good hands. I highly recommend Mr Harry for anyone looking for expert email server administration services. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="testimonial__navigation d-none d-sm-block">
+                            <button class="testimonial__button-prev circle-btn slider__nav-btn"><i
+                                    class="fa-regular fa-arrow-left-long"></i></button>
+                            <button class="testimonial__button-next circle-btn ml-5 slider__nav-btn"><i
+                                    class="fa-regular fa-arrow-right-long"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial area end -->
+
+    </main>
+    <!-- Body main wrapper end -->
+
+{% endblock %}

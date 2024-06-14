@@ -1,0 +1,947 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Body main wrapper start -->
+    <main>
+
+        <!-- Banner area start -->
+        <section class="banner__area banner-height d-flex align-items-center p-relative">
+            <div class="banner-shape d-none d-lg-block">
+                <img class="banner__shape-two" src="{% static 'img/tower-shape-small.png' %}" alt="image not found">
+            </div>
+            <!-- when slide active remove this class -->
+            <div class="swiper banner__active overflow-visible">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide banner_more_item">
+                        <div class="container">
+                            <div class="row align-items-center gy-5">
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="banner__content p-relative">
+                                        <h1 class="banner__title large wow fadeInUp" data-wow-delay=".3s"
+                                            data-wow-duration=".7s">Hi,
+                                            I’m <span class="bd-text-primary">Harry, </span>A Web Developer Based in Nigeria
+                                        </h1>
+                                        <p class="wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".9s">I am an Expert, with over 8 years Experience in Web and Mobile App Development. </p>
+                                    </div>
+                                    <div class="banner__btn wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1.1s">
+                                        <a class="bd-btn is-btn-anim" href="{% url 'portfolio' %}">
+                                            <span class="bd-btn-inner">
+                                                <span class="bd-btn-normal">Get my work</span>
+                                                <span class="bd-btn-hover">Get my work</span>
+                                                <i class="contentHidden"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="banner__thumb-wrapper wow fadeInRight" data-wow-delay=".8s"
+                                        data-wow-duration="1.2s">
+                                        <div class="banner__shape">
+                                            <img class="banner__shape-one" src="{% static 'img/tower-shape.png' %}"
+                                                alt="image not found">
+                                        </div>
+                                        <div class="banner__bg"></div>
+                                        <div class="banner__thumb">
+                                            <img src="{% static 'img/banner-01.png' %}" alt="image not found">
+                                        </div>
+                                        <div class="theme__social banner-social">
+                                            <a href="https://dribbble.com/CaptainHarry"><i class="fa-brands fa-dribbble"></i>
+                                                <div class="banner__social-tooltip">
+                                                    <p>Dribbble</p>
+                                                </div>
+                                            </a>
+                                            <a href="https://t.me/captainsexy"><i class="icon-plane"></i>
+                                                <div class="banner__social-tooltip">
+                                                    <p>Telegram</p>
+                                                </div>
+                                            </a>
+                                            <a href="https://www.linkedin.com/in/harry-nwozor-15878460/"><i class="fa-brands fa-linkedin"></i>
+                                                <div class="banner__social-tooltip">
+                                                    <p>Linkedin</p>
+                                                </div>
+                                            </a>
+                                            <a href="https://www.behance.net/captainharryp"><i class="fa-brands fa-behance"></i>
+                                                <div class="banner__social-tooltip">
+                                                    <p>Behance</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner area end -->
+
+        <!-- About area start -->
+        <section id="homeabout" class="bd-about__area section-space theme-bg-secondary">
+            <div class="container">
+                <div class="row g-5 align-items-lg-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="about__thumb-wrapper wow fadeInLeft tilt" data-wow-delay=".3s">
+                            <div class="about__thumb">
+                                <img src="{% static 'img/about-04.png' %}" alt="image not found">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="about__content wow fadeInRight" data-wow-delay=".3s">
+                            <div class="section__title-wrapper mb-25">
+                                <div class="section__title-wrapper">
+                                    <span class="section__subtitle">ABOUT ME</span>
+                                    <h2 class="section__title">Get To Know Me Better</h2>
+                                    <p class="contentHidden">contentHiddenText</p>
+                                </div>
+                            </div>
+                            <p class="about__text">Hello! I'm Harry, a passionate full stack and mobile app developer with a keen eye for innovation and a knack for turning ideas into powerful digital solutions. I thrive in the world of coding, creating dynamic, user-friendly applications that bridge the gap between functionality and aesthetics. </p>
+                            <div class="about__counter-wrapper">
+                                <div class="about__counter-info">
+                                    <div class="about__counter-count">
+                                        <h3><span class="counter">8</span>th</h3>
+                                    </div>
+                                    <p>Years of Experience</p>
+                                </div>
+                                <div class="about__counter-info">
+                                    <div class="about__counter-count">
+                                        <h3><span class="counter">20</span>+</h3>
+                                    </div>
+                                    <p>Project Completed</p>
+                                </div>
+                            </div>
+                            <div class="about__btn">
+                                <a class="bd-btn is-btn-anim" href="{% url 'about' %}">
+                                    <span class="bd-btn-inner">
+                                        <span class="bd-btn-normal">Know more</span>
+                                        <span class="bd-btn-hover">Know more</span>
+                                        <i class="contentHidden"></i>
+                                    </span>
+                                </a>
+                                <a class="play__btn popup-video animate-play"
+                                    href="https://www.youtube.com/watch?v=IB66LqwklYo"><span><i
+                                            class="icon-play"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About area end -->
+
+        <!-- Service area start -->
+        <section id="homeservices" class="bd-service__area section-space p-relative fix">
+            <div class="service__shape-wrapper">
+                <img class="service__shape" src="{% static 'img/shape/service-shape-01.png' %}" alt="image not found">
+            </div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="section__title-wrapper text-center section__title-space">
+                            <span class="section__subtitle">MY SERVICES</span>
+                            <h2 class="section__title mb-20">Professional Services</h2>
+                            <p class="section__paragraph is-br-none">I provide expert services, with a keen eye for details and a commitment to delivering high-quality solutions. I ensure a seamless and efficient process from concept to launch.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
+                        <div class="service__wrapper service__item bg-solid bordered-style">
+                            <div class="contentHidden"></div>
+                            <div class="contentHidden"></div>
+                            <span class="service__icon-wrap">
+                                <i class="icon-phone"></i>
+                            </span>
+                            <div class="service__content">
+                                <h5 class="service__title"><a href="{% url 'services' %}">Mobile Apps Development</a></h5>
+                                <p>Creating software applications for smartphones to deliver a user-friendly and efficient mobile experience.</p>
+                                <div class="contentHidden">
+                                    <a class="contentHidden" href="{% url 'services' %}">contentHidden <span><i
+                                                class="contentHidden"></i></span></a>
+                                    <a class="contentHidden" href="{% url 'services' %}"> <span class="contentHidden"><i
+                                                class="assets/imgs/icons/arrow.png"> </i></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s" data-wow-duration="1s">
+                        <div class="service__wrapper service__item bg-solid bordered-style">
+                            <div class="service__shape"></div>
+                            <div class="service__shape-2"></div>
+                            <span class="service__icon-wrap">
+                                <i class="icon-design"></i>
+                            </span>
+                            <div class="service__content">
+                                <h5 class="service__title"><a href="{% url 'services' %}">Wordpress Web Design</a></h5>
+                                <p>Creating and customizing beautiful websites to achieve visually and functional online solutions that meet user needs.</p>
+                                <div class="contentHidden">
+                                    <a class="contentHidden" href="{% url 'services' %}">contentHidden <span><i
+                                                class="contentHidden"></i></span></a>
+                                    <a class="contentHidden" href="{% url 'services' %}"> <span class="contentHidden"><i
+                                                class="assets/imgs/icons/arrow.png"> </i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s" data-wow-duration="1s">
+                        <div class="service__wrapper service__item bg-solid bordered-style">
+                            <div class="service__shape"></div>
+                            <div class="service__shape-2"></div>
+                            <span class="service__icon-wrap">
+                                <i class="icon-project"></i>
+                            </span>
+                            <div class="service__content">
+                                <h5 class="service__title"><a href="{% url 'services' %}">Full Stack Development</a></h5>
+                                <p>Enabling developers to work on all aspects of web or software applications, from user interfaces to server-side logic.</p>
+                                <div class="contentHidden">
+                                    <a class="contentHidden" href="{% url 'services' %}">contentHidden <span><i
+                                                class="contentHidden"></i></span></a>
+                                    <a class="contentHidden" href="{% url 'services' %}"> <span class="contentHidden"><i
+                                                class="assets/imgs/icons/arrow.png"> </i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1s">
+                        <div class="service__wrapper service__item bg-solid bordered-style">
+                            <div class="service__shape"></div>
+                            <div class="service__shape-2"></div>
+                            <span class="service__icon-wrap">
+                                <i class="icon-ux-design"></i>
+                            </span>
+                            <div class="service__content">
+                                <h5 class="service__title"><a href="{% url 'services' %}">Product Design</a></h5>
+                                <p>Refine physical or digital products, ensuring they meet user needs, are pleasing, and function effectively.</p>
+                                <div class="contentHidden">
+                                    <a class="contentHidden" href="{% url 'services' %}">contentHidden <span><i
+                                                class="contentHidden"></i></span></a>
+                                    <a class="contentHidden" href="{% url 'services' %}"> <span class="contentHidden"><i
+                                                class="assets/imgs/icons/arrow.png"> </i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s" data-wow-duration="1s">
+                        <div class="service__wrapper service__item bg-solid bordered-style">
+                            <div class="service__shape"></div>
+                            <div class="service__shape-2"></div>
+                            <span class="service__icon-wrap">
+                                <i class="icon-animation"></i>
+                            </span>
+                            <div class="service__content">
+                                <h5 class="service__title"><a href="{% url 'services' %}">Front End Development</a></h5>
+                                <p>The ability to design and code the user interface of a website, ensuring it is visually engaging and responsive.</p>
+                                <div class="contentHidden">
+                                    <a class="contentHidden" href="{% url 'services' %}">contentHidden <span><i
+                                                class="contentHidden"></i></span></a>
+                                    <a class="contentHidden" href="{% url 'services' %}"> <span class="contentHidden"><i
+                                                class="assets/imgs/icons/arrow.png"> </i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s" data-wow-duration="1s">
+                        <div class="service__wrapper service__item bg-solid bordered-style">
+                            <div class="service__shape"></div>
+                            <div class="service__shape-2"></div>
+                            <span class="service__icon-wrap">
+                                <i class="icon-envelope"></i>
+                            </span>
+                            <div class="service__content">
+                                <h5 class="service__title"><a href="{% url 'services' %}">Email Server Administrator</a></h5>
+                                <p>Configuring email servers to ensure secure email communication.</p>
+                                <div class="contentHidden">
+                                    <a class="contentHidden" href="{% url 'services' %}">contentHidden <span><i
+                                                class="contentHidden"></i></span></a>
+                                    <a class="contentHidden" href="{% url 'services' %}"> <span class="contentHidden"><i
+                                                class="assets/imgs/icons/arrow.png"> </i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service area end -->
+
+        <!-- Section divider -->
+        <div class="section__divider">
+            <hr>
+        </div>
+
+        <!-- Portfolio area start -->
+        <section id="homeworks" class="bd-portfolio__area section-space">
+            <div class="container">
+                <div class="row g-5 align-items-end section__title-space">
+                    <div class="col-lg-5 col-md-7">
+                        <div class="section__title-wrapper">
+                            <span class="section__subtitle">MY RECENT PORTFOLIO</span>
+                            <h2 class="section__title">Checkout My Latest Works</h2>
+                            <p class="contentHidden">contentHiddenText</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-5">
+                        <div class="portfolio__more text-md-end">
+                            <a class="bd-btn is-btn-anim" href="{% url 'portfolio' %}">
+                                <span class="bd-btn-inner">
+                                    <span class="bd-btn-normal">View all projects</span>
+                                    <span class="bd-btn-hover">View all projects</span>
+                                    <i class="contentHidden"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__wrapper">
+                    <div class="row grid g-5 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
+                            <div class=" portfolio__item">
+                                <div class="portfolio__thumb">
+                                    <a href="https://limandy.com/" target="_blank"><img
+                                            src="{% static 'img/portfolio-masonary-01.jpg' %}"
+                                            alt="img not found"></a>
+                                </div>
+                                <div class="portfolio__content">
+                                    <div class="portfolio__info">
+                                        <div class="portfolio__tag">
+                                            <a href="https://limandy.com/" target="_blank">Wordpress</a>
+                                        </div>
+                                        <h5 class="portfolio__title"><a href="{% url 'portfolio' %}">Limandy Entertainment</a>
+                                        </h5>
+                                    </div>
+                                    <div class="portfolio__btn">
+                                        <a href="https://limandy.com/" target="_blank" class="circle-btn">
+                                            <span class="icon__box">
+                                                <i class="fa-regular fa-arrow-right-long"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
+                            <div class=" portfolio__item">
+                                <div class="portfolio__thumb">
+                                    <a href="https://fitnesstagg.com/" target="_blank"><img
+                                            src="{% static 'img/portfolio-masonary-02.jpg' %}"
+                                            alt="img not found"></a>
+                                </div>
+                                <div class="portfolio__content">
+                                    <div class="portfolio__info">
+                                        <div class="portfolio__tag">
+                                            <a href="https://fitnesstagg.com/" target="_blank">Wordpress</a>
+                                        </div>
+                                        <h5 class="portfolio__title"><a href="https://fitnesstagg.com/" target="_blank">Fitness Tagg</a>
+                                        </h5>
+                                    </div>
+                                    <div class="portfolio__btn">
+                                        <a href="https://fitnesstagg.com/" target="_blank" class="circle-btn">
+                                            <span class="icon__box">
+                                                <i class="fa-regular fa-arrow-right-long"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
+                            <div class=" portfolio__item">
+                                <div class="portfolio__thumb">
+                                    <a href="https://charityecho.com/" target="_blank"><img
+                                            src="{% static 'img/portfolio-masonary-04.jpg' %}"
+                                            alt="img not found"></a>
+                                </div>
+                                <div class="portfolio__content">
+                                    <div class="portfolio__info">
+                                        <div class="portfolio__tag">
+                                            <a href="https://charityecho.com/" target="_blank">Django</a>
+                                        </div>
+                                        <h5 class="portfolio__title"><a href="https://charityecho.com/" target="_blank">Charity Echo</a></h5>
+                                    </div>
+                                    <div class="portfolio__btn">
+                                        <a href="https://charityecho.com/" target="_blank" class="circle-btn">
+                                            <span class="icon__box">
+                                                <i class="fa-regular fa-arrow-right-long"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
+                            <div class=" portfolio__item">
+                                <div class="portfolio__thumb">
+                                    <a href="https://quickspecialoffers.com/" target="_blank"><img
+                                            src="{% static 'img/portfolio-masonary-03.jpg' %}"
+                                            alt="img not found"></a>
+                                </div>
+                                <div class="portfolio__content">
+                                    <div class="portfolio__info">
+                                        <div class="portfolio__tag">
+                                            <a href="https://quickspecialoffers.com/" target="_blank">Wordpress</a>
+                                        </div>
+                                        <h5 class="portfolio__title"><a href="https://quickspecialoffers.com/" target="_blank">Quick Special Offers</a></h5>
+                                    </div>
+                                    <div class="portfolio__btn">
+                                        <a href="https://quickspecialoffers.com/" target="_blank" class="circle-btn">
+                                            <span class="icon__box">
+                                                <i class="fa-regular fa-arrow-right-long"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio area start -->
+
+        <!-- Section divider -->
+        <div class="section__divider">
+            <hr>
+        </div>
+
+        <!-- qualification start -->
+        <section class="bd-qulafication__area section-space">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="section__title-wrapper text-center">
+                            <span class="section__subtitle">Education & SKILL</span>
+                            <h2 class="section__title mb-25">My Curriculum Vitae</h2>
+                            <p class="contentHidden">contentHiddenText</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-30">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="faq__tab-wrapper bd-tab">
+                            <nav>
+                                <div class="nav nav-tabs faq-tab-slide justify-content-center" id="nav-tab"
+                                    role=tablist>
+                                    <label for="faq-tab-check" class="nav faq-separate">
+                                        <span class="nav-link" id="nav-experience-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-experience" role="tab" aria-controls="nav-experience"
+                                            aria-selected="true">Education</span>
+                                        <input type="checkbox" id="faq-tab-check">
+                                        <i></i>
+                                        <span class="nav-link active" id="nav-education-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-education" role="tab" aria-controls="nav-education"
+                                            aria-selected="false">Experience</span>
+                                    </label>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="tab-content wow fadeInUp" id="nav-tabContent" data-wow-delay=".3s"
+                        data-wow-duration="1s">
+                        <div class="tab-pane fade show  active" id="nav-experience" role="tabpanel"
+                            aria-labelledby="nav-experience-tab">
+                            <div class="row g-5">
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="faq__style">
+                                        <div class="bd__faq">
+                                            <div class="accordion" id="accordionExampleFour">
+                                                <div class="accordion-item">
+                                                    <h5 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                            aria-expanded="false" aria-controls="collapseTwo">
+                                                            National Diploma
+                                                        </button>
+                                                    </h5>
+                                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                                        aria-labelledby="headingTwo"
+                                                        data-bs-parent="#accordionExampleFour">
+                                                        <div class="accordion-body">
+                                                            <span class="qualification__meta">Akanu Ibiam Federal Polytecnic (2006 -
+                                                                2008)</span>
+                                                            <p>Oridinary National Diploma (OND) In Eletrical Eletronics Engineering From Akanu Ibiam Federal Polytecnic Uwanna Afikpo.</p>
+                                                            <h6 class="qualification__rating">4.50/5</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h5 class="accordion-header" id="headingOne">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                            aria-expanded="true" aria-controls="collapseOne">
+                                                            Bachelor of Engineering
+                                                        </button>
+                                                    </h5>
+                                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                                        aria-labelledby="headingOne"
+                                                        data-bs-parent="#accordionExampleFour">
+                                                        <div class="accordion-body">
+                                                            <span class="qualification__meta">University of Nigeria (2009 -
+                                                                2014)</span>
+                                                            <p>Bachelor of Engineering (B.Eng) In Eletronics Engineering From University Of Nigeria Nsukka.</p>
+                                                            <h6 class="qualification__rating">4.70/5</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h5 class="accordion-header" id="headingThree">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                            aria-expanded="false" aria-controls="collapseThree">
+                                                            Wordpress Specialist
+                                                        </button>
+                                                    </h5>
+                                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                                        aria-labelledby="headingThree"
+                                                        data-bs-parent="#accordionExampleFour">
+                                                        <div class="accordion-body">
+                                                            <span class="qualification__meta">World University (2014 -
+                                                                2015)</span>
+                                                            <p>Certified Web Designer In Wordpress Web Designing From Dreams Wide Academy.</p>
+                                                            <h6 class="qualification__rating">4.90/5</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="faq__style">
+                                        <div class="bd__faq">
+                                            <div class="accordion" id="accordionExampleTwo">
+                                                <div class="accordion-item">
+                                                    <h5 class="accordion-header" id="headingSix">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseSix_2"
+                                                            aria-expanded="false" aria-controls="collapseSix_2">
+                                                            Product Design
+                                                        </button>
+                                                    </h5>
+                                                    <div id="collapseSix_2" class="accordion-collapse collapse"
+                                                        aria-labelledby="headingSix"
+                                                        data-bs-parent="#accordionExampleTwo">
+                                                        <div class="accordion-body">
+                                                            <span class="qualification__meta">World University (2017 -
+                                                                2018)</span>
+                                                            <p>Certified Product Designer In Figma from World University Of Science & Technology Lagos.</p>
+                                                            <h6 class="qualification__rating">4.60/5</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h5 class="accordion-header" id="headingSeven">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseSeven_1"
+                                                            aria-expanded="false" aria-controls="collapseSeven_1">
+                                                            Digital Marketing
+                                                        </button>
+                                                    </h5>
+                                                    <div id="collapseSeven_1" class="accordion-collapse collapse"
+                                                        aria-labelledby="headingSeven"
+                                                        data-bs-parent="#accordionExampleTwo">
+                                                        <div class="accordion-body">
+                                                            <span class="qualification__meta">Portland Academy (2018 -
+                                                                2020)</span>
+                                                            <p>Digital Marketing Specialist, Email Server Administrator & Social Media Consultant.</p>
+                                                            <h6 class="qualification__rating">4.50/5</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h5 class="accordion-header" id="headingFour">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                            aria-expanded="false" aria-controls="collapseFour">
+                                                            Web Developer
+                                                        </button>
+                                                    </h5>
+                                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                                        aria-labelledby="headingFour"
+                                                        data-bs-parent="#accordionExampleFour">
+                                                        <div class="accordion-body">
+                                                            <span class="qualification__meta">Dreams Academy (2016 -
+                                                                2017)</span>
+                                                            <p>Certified Web Developer In Django, Vue.js From World University Of Science & Technology.</p>
+                                                            <h6 class="qualification__rating">4.80/5</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade " id="nav-education" role="tabpanel"
+                            aria-labelledby="nav-education-tab">
+                            <div class="row g-5">
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="faq__style">
+                                        <div class="bd__faq">
+                                            <div class="accordion" id="accordionExampleThree">
+                                                <div class="accordion-item">
+                                                    <h5 class="accordion-header" id="headingSix_1">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseSix_1"
+                                                            aria-expanded="false" aria-controls="collapseSix_1">
+                                                            Front-End Developer
+                                                        </button>
+                                                    </h5>
+                                                    <div id="collapseSix_1" class="accordion-collapse collapse"
+                                                        aria-labelledby="headingSix_1"
+                                                        data-bs-parent="#accordionExampleThree">
+                                                        <div class="accordion-body">
+                                                            <span class="qualification__meta">Winston Academy (2019 -
+                                                                2022)</span>
+                                                            <p>Qualified Front-End Web Development In HTML, CSS, and Javascript.</p>
+                                                            <h6 class="qualification__rating">4.80/5</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                 <div class="accordion-item">
+                                                    <h5 class="accordion-header" id="headingFour">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                            aria-expanded="false" aria-controls="collapseFour">
+                                                            Web Developer
+                                                        </button>
+                                                    </h5>
+                                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                                        aria-labelledby="headingFour"
+                                                        data-bs-parent="#accordionExampleFour">
+                                                        <div class="accordion-body">
+                                                            <span class="qualification__meta">Dreams Academy (2016 -
+                                                                2017)</span>
+                                                            <p>Certified Web Developer In Django, Vue.js from World University Of Science & Technology.</p>
+                                                            <h6 class="qualification__rating">4.70/5</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                 <div class="accordion-item">
+                                                    <h5 class="accordion-header" id="headingEight">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseEight"
+                                                            aria-expanded="false" aria-controls="collapseEight">
+                                                            Mobile App Developer
+                                                        </button>
+                                                    </h5>
+                                                    <div id="collapseEight" class="accordion-collapse collapse"
+                                                        aria-labelledby="headingEight"
+                                                        data-bs-parent="#accordionExampleTwo">
+                                                        <div class="accordion-body">
+                                                            <span class="qualification__meta">MYT Academy (2020 -
+                                                                Date)</span>
+                                                            <p>Specialist In Flutter And Dart Programming Language For Mobile And Desktop Applications.</p>
+                                                            <h6 class="qualification__rating">4.70/5</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="faq__style">
+                                        <div class="bd__faq">
+                                            <div class="accordion" id="accordionExampleOne">
+                                                  <div class="accordion-item">
+                                                    <h5 class="accordion-header" id="headingFive">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseFive_1"
+                                                            aria-expanded="true" aria-controls="collapseFive_1">
+                                                            Full Stack Development
+                                                        </button>
+                                                    </h5>
+                                                    <div id="collapseFive_1" class="accordion-collapse collapse show"
+                                                        aria-labelledby="headingFive"
+                                                        data-bs-parent="#accordionExampleTwo">
+                                                        <div class="accordion-body">
+                                                            <span class="qualification__meta">Winston Academy (2019 -
+                                                                2022)</span>
+                                                            <p>Qualified Full Stack Web Development In Python, Javascript And Django.</p>
+                                                            <h6 class="qualification__rating">4.80/5</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item active">
+                                                    <h5 class="accordion-header" id="headingOne_1">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseOne_1"
+                                                            aria-expanded="false" aria-controls="collapseOne_1">
+                                                            Web Scrapping
+                                                        </button>
+                                                    </h5>
+                                                    <div id="collapseOne_1" class="accordion-collapse collapse show"
+                                                        aria-labelledby="headingOne_1"
+                                                        data-bs-parent="#accordionExampleOne" style="">
+                                                        <div class="accordion-body">
+                                                            <span class="qualification__meta">Winston Academy (2020 -
+                                                                2021)</span>
+                                                            <p>Expert In Web Scrapping Of All Kinds Of Websites ON The Internet</p>
+                                                            <h6 class="qualification__rating">4.50/5</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h5 class="accordion-header" id="headingEight">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseEight"
+                                                            aria-expanded="false" aria-controls="collapseEight">
+                                                            Web App Developer
+                                                        </button>
+                                                    </h5>
+                                                    <div id="collapseEight" class="accordion-collapse collapse"
+                                                        aria-labelledby="headingEight"
+                                                        data-bs-parent="#accordionExampleTwo">
+                                                        <div class="accordion-body">
+                                                            <span class="qualification__meta">MYT Academy (2020 -
+                                                                Date)</span>
+                                                            <p>Specialist In Flutter And Dart Programming Language For Mobile And Desktop Applications.</p>
+                                                            <h6 class="qualification__rating">4.60/5</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- qualification end -->
+
+        <!-- testimonial area start -->
+        <section class="bd-testimonial__area section-space theme-bg-secondary p-relative z-index-1">
+            <div class="container">
+                <div class="row align-items-center g-5 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-xl-5 col-lg-5">
+                        <div class="testimonial__thumb-wrap">
+                            <div class="testimonial__thumb">
+                                <div class="testimonial__bg"></div>
+                                <img src="{% static 'img/testimonial-01.jpg' %}" alt="img not found">
+                                <div class="testimonial__thumb-small">
+                                    <img class="img-one" src="{% static 'img/user-04.png' %}" alt="img not found">
+                                    <img class="img-two" src="{% static 'img/user-05.png' %}" alt="img not found">
+                                    <img class="img-three" src="{% static 'img/user-06.png' %}" alt="img not found">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="testimonial__item">
+                            <div class="section__title-wrapper mb-25">
+                                <span class="section__subtitle mb-15">Happy Clients</span>
+                                <h2 class="section__title">Client Experiences and Testimonials</h2>
+                            </div>
+                            <div class="swiper testimonial__active p-relative">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="testimonial__content">
+                                            <div class="testimonial__rating">
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                            </div>
+                                            <div class="testimonial__text">
+                                                <p>“"I had the pleasure of collaborating with Mr Harry on a complex Flutter mobile app project, and I couldn't be happier with the results. Their technical proficiency, coupled with their dedication to understanding our business requirements, ensured a smooth development process from start to finish. Their communication was excellent, and they always went the extra mile to ensure our satisfaction. I highly recommend Mr Harry for any mobile app development needs.”</p>
+                                            </div>
+                                            <div class="testimonial__avatar-item">
+                                                <div class="testimonial__avatar-info">
+                                                    <h6 class="testimonial__avatar-title">Dr Rogers</h6>
+                                                    <span class="testimonial__avatar-designation">Doctor</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial__content">
+                                            <div class="testimonial__rating">
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                            </div>
+                                            <div class="testimonial__text">
+                                                <p>“Working with Mr Harry for our Figma-based UI/UX design project was an absolute delight. Their creativity, attention to detail, and ability to translate our ideas into visually stunning designs were remarkable. They were receptive to feedback and always willing to iterate until we achieved the perfect design. It was a pleasure collaborating with Mr Harry, and I look forward to working with them again in the future.”</p>
+                                            </div>
+                                            <div class="testimonial__avatar-item">
+                                                <div class="testimonial__avatar-info">
+                                                    <h6 class="testimonial__avatar-title">Steve</h6>
+                                                    <span class="testimonial__avatar-designation">Designer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial__content">
+                                            <div class="testimonial__rating">
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                            </div>
+                                            <div class="testimonial__text">
+                                                <p>“I can't thank Mr Harry enough for their exemplary full-stack development services using Python and Django. Their deep understanding of both front-end and back-end technologies allowed them to develop a highly functional and scalable web application for our business. Their professionalism, expertise, and dedication to delivering results were evident throughout the project. I highly recommend Mr Harry for any full-stack development needs.”</p>
+                                            </div>
+                                            <div class="testimonial__avatar-item">
+                                                <div class="testimonial__avatar-info">
+                                                    <h6 class="testimonial__avatar-title">Rachel</h6>
+                                                    <span class="testimonial__avatar-designation">Entrepreneur</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial__content">
+                                            <div class="testimonial__rating">
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                            </div>
+                                            <div class="testimonial__text">
+                                                <p>“Choosing [Your Name] for our WordPress web design project was one of the best decisions we made. They brought our vision to life with a beautifully designed website that perfectly represents our brand. Their responsiveness, attention to detail, and commitment to customer satisfaction were exceptional. I'm thrilled with the outcome, and I wouldn't hesitate to recommend [Your Name] to anyone looking for top-quality web design services.”</p>
+                                            </div>
+                                            <div class="testimonial__avatar-item">
+                                                <div class="testimonial__avatar-info">
+                                                    <h6 class="testimonial__avatar-title">Tony</h6>
+                                                    <span class="testimonial__avatar-designation">Real Estate</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial__content">
+                                            <div class="testimonial__rating">
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                            </div>
+                                            <div class="testimonial__text">
+                                                <p>“Harry and his team delivered a mobile and web application that has truly transformed our business. Their technical prowess, attention to detail, and commitment to excellence were evident throughout the project. The result is a top-notch application that our users love.”</p>
+                                            </div>
+                                            <div class="testimonial__avatar-item">
+                                                <div class="testimonial__avatar-info">
+                                                    <h6 class="testimonial__avatar-title">Mrs Helen Peters</h6>
+                                                    <span class="testimonial__avatar-designation">Blogger</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial__content">
+                                            <div class="testimonial__rating">
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icon-star"></i>
+                                                </a>
+                                            </div>
+                                            <div class="testimonial__text">
+                                                <p>“Mr Harry Have exceeded all our expectations. Their creativity, precision, and commitment to user-centric design resulted in a product that is both visually striking and incredibly functional. We couldn't be happier with the outcome.”</p>
+                                            </div>
+                                            <div class="testimonial__avatar-item">
+                                                <div class="testimonial__avatar-info">
+                                                    <h6 class="testimonial__avatar-title">Kelvin Lawrence</h6>
+                                                    <span class="testimonial__avatar-designation">Marketing</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- If we need navigation buttons -->
+                                <div class="testimonial__navigation d-none d-sm-block">
+                                    <button class="testimonial__button-prev circle-btn slider__nav-btn"><i
+                                            class="fa-regular fa-arrow-left-long"></i></button>
+                                    <button class="testimonial__button-next circle-btn ml-5 slider__nav-btn"><i
+                                            class="fa-regular fa-arrow-right-long"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- testimonial area end -->
+
+    </main>
+    <!-- Body main wrapper end -->
+
+{% endblock %}
