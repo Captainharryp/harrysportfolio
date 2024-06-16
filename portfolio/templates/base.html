@@ -51,7 +51,7 @@
                     <div class="offcanvas__top d-flex justify-content-between align-items-center">
                         <div class="offcanvas__logo">
                             <a href="{% url 'home' %}">
-                                <img src="{% static 'img/logo.svg' %}" alt="logo not found">
+                                <img src="{% static 'img/wow.png' %}" alt="logo not found">
                             </a>
                         </div>
                         <div class="offcanvas__close">
@@ -76,10 +76,10 @@
                     </div>
                     <div class="offcanvas__btn">
                         <div class="header__btn-wrap">
-                            <a class="bd-btn is-btn-anim" href="#">
+                            <a class="bd-btn is-btn-anim" href="{% url 'contact' %}">
                                 <span class="bd-btn-inner">
-                                    <span class="bd-btn-normal">Purchase now</span>
-                                    <span class="bd-btn-hover">Purchase now</span>
+                                    <span class="bd-btn-normal">Contact Me</span>
+                                    <span class="bd-btn-hover">Contact Me</span>
                                     <i class="contentHidden"></i>
                                 </span>
                             </a>

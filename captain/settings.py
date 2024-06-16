@@ -14,8 +14,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=False, cast=bool)
-
+DEBUG = True
 
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='', cast=lambda v: [s.strip() for s in v.split(',')])
@@ -136,12 +135,12 @@ EMAIL_USE_TLS = True
 SESSION_COOKIE_SECURE = True
 CFRS_COOKIE_SECURE = True
 
-SECURE_SSL_RIDIRECT = True
+#SECURE_SSL_RIDIRECT = True
 
 
 # HSTS settings
 
-SECURE_HSTS_SECONDS = 0 #31536000 (=1 year)
-SECURE_HSTS_SECONDS = True
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-SECURE_HSTS_PRELOAD = True
+#SECURE_HSTS_SECONDS = 0 #31536000 (=1 year)
+#SECURE_HSTS_SECONDS = True
+#SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+#SECURE_HSTS_PRELOAD = True
